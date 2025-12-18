@@ -8,9 +8,7 @@ export default function Navbar() {
 
     const navLinks = [
         { name: 'Home', href: '/#' },
-        { name: 'Features', href: '/#features' },
-        { name: 'Pricing', href: '/#pricing' },
-        { name: 'FAQ', href: '/#faq' },
+      
     ];
 
     return (
@@ -33,9 +31,7 @@ export default function Navbar() {
                 </div>
 
                 <div className='hidden md:flex items-center gap-3'>
-                    <button className='text-sm font-medium text-gray-300 hover:text-white transition max-sm:hidden'>
-                        Sign in
-                    </button>
+                 
                     <PrimaryButton className='max-sm:text-xs hidden sm:inline-block'>Get Started</PrimaryButton>
                 </div>
 
