@@ -11,7 +11,7 @@ function App() {
 			<LenisScroll />
 			<Navbar />
 			<Home />
-			<Footer />
+		
 		</>
 	);
 }
