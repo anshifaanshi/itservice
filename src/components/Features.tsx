@@ -5,14 +5,15 @@ import { motion } from 'framer-motion';
 
 export default function Features() {
     const refs = useRef<(HTMLDivElement | null)[]>([]);
+    
     return (
         <section id="features" className="py-20 2xl:py-32">
             <div className="max-w-6xl mx-auto px-4">
 
                 <Title
-                    title="Services"
-                    heading="Everything your brand needs to grow"
-                    description="From strategy to execution, we help businesses build strong digital products and meaningful customer experiences."
+                    title="Our 360-Degree Service Ecosystem"
+                    heading="Ready to Go Digital? Lead the Way."
+                    description="From the first line of code to the final frame of a brand film, we build integrated digital experiences that drive real ROI."
                 />
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -34,7 +35,7 @@ export default function Features() {
                             }}
                             className="rounded-2xl p-6 bg-white/3 border border-white/6"
                         >
-                            <div className="w-12 h-12 rounded-lg bg-violet-900/20 flex items-center justify-center mb-4">
+                            <div className="w-12 h-12 rounded-lg bg-blue-600/20 flex items-center justify-center mb-4 text-blue-400">
                                 {feature.icon}
                             </div>
                             <h3 className="text-lg font-semibold mb-2">{feature.title}</h3>
@@ -44,7 +45,19 @@ export default function Features() {
                         </motion.div>
                     ))}
                 </div>
+
+                {/* Brand Conclusion */}
+                <motion.div 
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{ delay: 0.5 }}
+                    className="mt-16 text-center"
+                >
+                    <p className="text-gray-400 text-sm uppercase tracking-[0.2em] font-bold">
+                        Ekho Digix: Future-Proofing Your Digital Success
+                    </p>
+                </motion.div>
             </div>
         </section>
     );
-};
+}
