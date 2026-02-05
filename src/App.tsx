@@ -1,4 +1,4 @@
-import Navbar from './components/Navbar';
+
 import Home from './pages/Home';
 import SoftBackdrop from './components/SoftBackdrop';
 
@@ -9,7 +9,7 @@ function App() {
 		<>
 			<SoftBackdrop />
 			<LenisScroll />
-			<Navbar />
+		
 			<Home />
 		
 		</>
